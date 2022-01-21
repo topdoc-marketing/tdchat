@@ -14,7 +14,6 @@ export const buildCreatePayload = ({
   let payload;
   if (file) {
     payload = new FormData();
-    // payload.append('attachments[]', file, file.name);
     if (message) {
       payload.append('content', message);
     }
